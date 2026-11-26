@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permisos de la aplicación -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PerfilUsuarioApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PerfilUsuarioApp"
+        android:usesCleartextTraffic="true">
+
+        <!-- Pantalla de perfil -->
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:exported="false" />
+
+        <!-- Pantalla de registro -->
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Pantalla de inicio de sesión -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false" />
+
+        <!-- Pantalla inicial -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
